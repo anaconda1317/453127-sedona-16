@@ -1,0 +1,39 @@
+.video {
+   @include list-reset();
+
+  text-transform: uppercase;
+  font-family: $page-font;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 39px;
+}
+
+.video__outline {
+  min-height: 193px;
+}
+
+.video__title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+.video__description {
+  width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 27px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+}

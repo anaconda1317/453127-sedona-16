@@ -1,0 +1,13 @@
+.articles__wrapper {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5e5e5;
+
+
+}
+
+// .articles__video video {
+//   @include list-reset();
+// }
