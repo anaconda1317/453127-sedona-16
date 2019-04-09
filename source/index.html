@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
@@ -18,9 +19,9 @@
               <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">Html academy</a></li>
             </ul>
           </div>
-          <a class="page-header__logo page-header__logo--mobile">
+          <a class="page-header__logo">
             <picture>
-              <img class="page-header__logo-image" src="http://placehold.it/137x72" width="137" height="72" alt="Sedona logo">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona logo">
             </picture>
           </a>
         </nav>
@@ -30,19 +31,19 @@
         <h1 class="visually-hidden">Cайт выбора гостиниц в Седоне, штат Аризона. США</h1>
         <section class="banner">
           <h2 class="visually-hidden">Вводная секция с баннером о Седоне в Аризоне.</h2>
-          <img class="banner__image banner__image--index" src="http://placehold.it/458x352" width="458" height="352" alt="Welcome to the gorgeous Sedona">
-
+            <div class="banner__image banner__image--index">
+              <img src="img/text-sedona-index.svg" alt="Welcome Sedona" width="280" height="213">
+            </div>
           <div class="banner__wrapper">
-            <p class="banner__slogan">Седона — небольшой городок в Аризоне, зaслуживающий большего!</p>
-            <p class="banner__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <p class="banner__slogan banner__slogan--small">Седона — небольшой городок в Аризоне, зaслуживающий большего!</p>
+            <p class="banner__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
         </section>
 
         <section class="all-reasons">
           <h2 class="visually-hidden">Преимущества городка Седона</h2>
           <ul class="all-reasons-list">
-
-            <li class="reason">
+            <li class="reason reason--first">
               <div class="reason__wrapper">
                 <h3 class="reason__title">Настоящий городок</h3>
                 <span class="reason__number">— №1 —</span>
@@ -50,7 +51,7 @@
               </div>
 
               <div class="reason__image-wpapper">
-                <img class="reason__photo-img" src="http://placehold.it/800x256" width="800" height="256" alt="Седона">
+                <img class="reason__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
               </div>
             </li>
 
@@ -82,7 +83,7 @@
                 <span class="reason__number">— №2 —</span>
                 <p class="reason__description">Да, по нему можно пройти! Если вы&nbsp;конечно вы осмелитесь</p>
                 <div class="reason__image-wpapper">
-                  <img class="reason__photo-img" src="http://placehold.it/800x256" width="800" height="256" alt="Седона. Мост дьявола">
+                  <img class="reason__mg" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Седона. Мост дьявола">
                 </div>
               </div>
             </li>
@@ -90,22 +91,22 @@
 
 
 
-            <li class="reason">
-              <ul class="reason__list-grey">
-                <li class="reason__item-grey reason__hr">
-                  <h3 class="reason__title-grey">Небольшая площадь</h3>
-                  <span class="reason__number-grey">— №3 —</span>
-                  <p class="reason__description-grey">Все интересные места находятся очень близко</p>
+            <li class="reasons">
+              <ul class="reasons__list-grey">
+                <li class="reasons__item-grey reasons__hr">
+                  <h3 class="reasons__title-grey">Небольшая площадь</h3>
+                  <span class="reasons__number-grey">— №3 —</span>
+                  <p class="reasons__description-grey">Все интересные места находятся очень близко</p>
                 </li>
-                <li class="reason__item-grey reason__hr">
-                  <h3 class="reason__title-grey">Красивая дорога</h3>
-                  <span class="reason__number-grey">— №4 —</span>
-                  <p class="reason__description-grey">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+                <li class="reasons__item-grey reasons__hr">
+                  <h3 class="reasons__title-grey">Красивая дорога</h3>
+                  <span class="reasons__number-grey">— №4 —</span>
+                  <p class="reasons__description-grey">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
                 </li>
-                <li class="reason__item-grey reason__hr">
-                  <h3 class="reason__title-grey">Мало туристов</h3>
-                  <span class="reason__number-grey">— №5 —</span>
-                  <p class="reason__description-grey">Большинство едет в Гранд Каньон и толпится там!</p>
+                <li class="reasons__item-grey reasons__hr">
+                  <h3 class="reasons__title-grey">Мало туристов</h3>
+                  <span class="reasons__number-grey">— №5 —</span>
+                  <p class="reasons__description-grey">Большинство едет в Гранд Каньон и толпится там!</p>
                 </li>
               </ul>
             </li>
@@ -129,37 +130,39 @@
 
 
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__hashtag hashtag">
-            <a class="hashtag__link" href="#">#visitSedona</a>
-           <!--  <span class="hashtag">#Visitsedona</span> -->
+
+          <div class="page-footer__hash-wrapper">
+            <span class="page-footer__hash">#Visitsedona</span>
+              <!-- <a class="hash__link" href="#">#visitSedona</a> -->
           </div>
 
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--tweeter" href="#">ссылка на Твиттер
-                 <!--  <svg class="social__link-svg">   </svg> --></a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">ссылка на Facebook
-                    <!-- <svg class="social__link-svg">   </svg> --></a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#">ссылка на YouTube
-                      <!-- <svg class="social__link-svg">   </svg> --></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="page-footer__copyright copyright">
-                  <b class="copyright__text">Разработано:</b>
-                  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                    <span class="visually-hidden">Ссылка на интенсив в Академии</span>
-                  </a>
-                </div>
+                <a class="social__link" href="#">ссылка на Твиттер
+                  <svg class="social__link-svg social__link-svg--yt"></svg></a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link" href="#">ссылка на Facebook
+                    <svg class="social__link-svg social__link-svg--fb"></svg></a>
+              </li>
+              <li class="social__item">
+                    <a class="social__link" href="#">ссылка на YouTube
+                      <svg class="social__link-svg social__link-svg--yt"></svg></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">Ссылка на интенсив в Академии</span>
+              <svg class="copyright__link-svg"></svg>
+            </a>
           </div>
 
       </footer>
     </div>
   </body>
 </html>
+
+

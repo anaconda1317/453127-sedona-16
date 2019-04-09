@@ -1,0 +1,21 @@
+.page-footer {
+   display: flex;
+   flex-direction: column;
+  text-transform: uppercase;
+  color: $main-text-color;
+  font-family: $page-font;
+  text-align: center;
+  padding-top: 1px;
+  height: 244px;
+}
+
+.page-footer__hash-wrapper {
+  margin: 0 0 37px 0;
+  padding: 35px 0 0 0;
+}
+
+.page-footer__hash {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
