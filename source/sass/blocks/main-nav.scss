@@ -2,4 +2,20 @@
   position: relative;
 }
 
+.main-nav__toggle {
 
+  &--closed {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+
+    &--closed {
+      display: none;
+    }
+  }
+}

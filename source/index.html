@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden">Кнопка открытия/закрытия меню в мобильой версии</span>
           </button>
           <div class="main-nav__wrapper">
@@ -19,7 +20,8 @@
               <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">Html academy</a></li>
             </ul>
           </div>
-          <a class="page-header__logo">
+         <!--  <p class="page-header__block"></p> -->
+          <a class="page-header__logo page-header__logo--mobile">
             <picture>
               <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona logo">
             </picture>
@@ -47,10 +49,10 @@
               <div class="reason__wrapper">
                 <h3 class="reason__title">Настоящий городок</h3>
                 <span class="reason__number">— №1 —</span>
-                <p class="reason__description">Седона — не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
+                <p class="reason__description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
 
-              <div class="reason__image-wpapper">
+              <div class="reason__image-wrapper">
                 <img class="reason__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
               </div>
             </li>
@@ -66,7 +68,7 @@
                 </li>
                 <li class="features__item features__item--gift">
                   <h3 class="features__title">Сувениры</h3>
-                  <p class="features__description">Не только китайского,&ensp;<br>но и местного производства!</p>
+                  <p class="features__description">Не только китайского, но и местного производства!</p>
                 </li>
                 <li class="features__item features__item--food">
                   <h3 class="features__title">Еда</h3>
@@ -77,14 +79,14 @@
 
 
 
-            <li class="reason">
+            <li class="reason reason--reverse">
               <div class="reason__wrapper">
                 <h3 class="reason__title">Там есть мост дьявола</h3>
                 <span class="reason__number">— №2 —</span>
                 <p class="reason__description">Да, по нему можно пройти! Если вы&nbsp;конечно вы осмелитесь</p>
-                <div class="reason__image-wpapper">
-                  <img class="reason__mg" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Седона. Мост дьявола">
-                </div>
+              </div>
+              <div class="reason__image-wrapper">
+                <img class="reason__mg" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Седона. Мост дьявола">
               </div>
             </li>
 
@@ -139,15 +141,18 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="#">ссылка на Твиттер
+                <a class="social__link" href="#">
+                <span class="visually-hidden">Твиттер</span>
                   <svg class="social__link-svg social__link-svg--yt"></svg></a>
               </li>
               <li class="social__item">
-                  <a class="social__link" href="#">ссылка на Facebook
+                  <a class="social__link" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
                     <svg class="social__link-svg social__link-svg--fb"></svg></a>
               </li>
               <li class="social__item">
-                    <a class="social__link" href="#">ссылка на YouTube
+                    <a class="social__link" href="#">
+                    <span class="visually-hidden">Ютуб</span>
                       <svg class="social__link-svg social__link-svg--yt"></svg></a>
               </li>
             </ul>

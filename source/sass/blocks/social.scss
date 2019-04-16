@@ -38,10 +38,12 @@
   height: 48px;
 }
 
-
-
 .social__link-svg {
   position: absolute;
   top: 17px;
   left: 14px;
+}
+
+.social__link:active .social__link-svg {
+  fill: #88b6d1;
 }
