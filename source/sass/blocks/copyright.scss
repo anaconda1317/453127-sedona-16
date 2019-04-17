@@ -24,6 +24,15 @@
   height: 40px;
 }
 
+.copyright__link:hover .copyright__link-svg,
+.copyright__link:focus .copyright__link-svg {
+  fill: $main-blue;
+}
+
+.copyright__link:active .copyright__link-svg {
+  fill: #b2b2b2;
+}
+
 .copyright__link-svg {
   position: absolute;
   padding: 6px;

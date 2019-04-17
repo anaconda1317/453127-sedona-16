@@ -29,3 +29,35 @@
   font-weight: normal;
   color: #333333;
 }
+
+
+@media (min-width: $tablet-width) {
+  .offer__wrapper {
+    min-height: 318px;
+  }
+
+  .offer__description {
+  width: 450px;
+  margin: 0 auto 42px auto;
+  }
+
+  .offer__question {
+  font-size: 30px;
+  padding: 56px 0 0 0;
+  margin: 0 0 31px 0;
+  }
+
+  .offer__open-search {
+    width: 458px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__wrapper {
+    min-height: 331px;
+  }
+
+  .offer__description {
+  margin: 0 auto 47px auto;
+  }
+}
