@@ -16,6 +16,10 @@
   height: 83px;
 }
 
+  .page-header__logo--mobile {
+  top: 224px;
+  }
+
 @media (min-width: $tablet-width) {
   .page-header__logo {
    top: 0;
