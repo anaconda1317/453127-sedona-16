@@ -1,19 +1,26 @@
 .site-list {
   @include list-reset;
-  margin-bottom: 56px;
 }
-
-.site-list--closed {
-  @include list-reset;
-  display: none;
-}
-
 
 .site-list__item {
   background-color: $main-blue;
   min-height: 56px;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
+
+  &:hover {
+    background-color: #669ec1;
+  }
+
+  &:focus {
+    background-color: #669ec1;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active {
+    background-color:  #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   a {
     display: block;
@@ -32,21 +39,10 @@
   }
 }
 
-// .site-list__item:not(.site-list__item--active):focus,
-// .site-list__item:not(.site-list__item--active):hover {
-//   background-color: #669ec0;
-// }
 
-// .site-list__item:not(.site-list__item--active):active {
-//   background-color: #5496bd;
-// }
 
 .site-list__item:not(.site-list__item--active):active .site-list__link {
   color: rgba(255,255,255,.3);
-}
-
-.site-list__link {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -58,10 +54,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
-
-      &--closed {
-    display: none;
-    }
   }
 
   .site-list__item {
@@ -79,6 +71,20 @@
       box-shadow: none;
     }
 
+    &:hover,
+    &:focus {
+      background-color: transparent;
+
+      a {
+        color: $main-blue;
+      }
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
+
     a {
       display: block;
       padding-top: 13px;
@@ -87,41 +93,9 @@
       font-size: 14px;
       line-height: 26px;
       text-transform: uppercase;
-
-
-      &:hover,
-      &:focus {
-        outline: none;
-        color: $main-blue;
-      }
-
-      &:active {
-        color: rgba(0, 0, 0, 0.3);
-      }
     }
   }
 }
-
-
-
-
-// @media (min-width: $tablet-width) {
-//   .site-list__item--active a {
-//     color: #766357;
-
-//     &:hover,
-//     &:focus {
-//       color: #604e43;
-//     }
-
-//     &:active {
-//       color: rgba(119, 99, 87, 0.3);
-//     }
-//   }
-// }
-
-
-
 
 
 @media (min-width: $desktop-width) {
@@ -134,5 +108,12 @@
 
   .site-list__item {
     width: 259px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list--closed {
+    @include list-reset;
+    display: none;
   }
 }

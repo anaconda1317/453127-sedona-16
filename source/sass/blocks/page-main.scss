@@ -1,7 +1,14 @@
+
+.page-main {
+  padding-top: 56px;
+}
+
+
+
 @media (min-width: $tablet-width) {
   .page-main {
     width: 768px;
-
+    padding-top: 0;
   }
 }
 
