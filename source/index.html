@@ -9,8 +9,8 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden">Кнопка открытия/закрытия меню в мобильой версии</span>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Кнопка открытия/закрытия меню в мобильой версии</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -124,7 +124,7 @@
           </div>
           <div class="map">
             <h2 class="visually-hidden">Расположение Седоны на карте</h2>
-            <img src="http://placehold.it/1200x593" width="1200" height="593" alt="Карта Седона.">
+            <img src="http://placehold.it/1200x350" width="1200" height="350" alt="Карта Седона.">
             <!-- <iframe src=""></iframe> -->
           </div>
         </section>
@@ -164,9 +164,33 @@
               <svg class="copyright__link-svg"></svg>
             </a>
           </div>
-
       </footer>
     </div>
+    <script>
+      // Класс  main-nav__toggle- -closed по умолчанию,- мобильное меню закрыто, для его
+      // открытия нужно нажать на кнопку бургера, для закрытия тоже нажать на крестик
+      // Переменные для открытия и закрытия верхнего меню в мобилке
+
+var mainNavToggle = document.querySelector(".main-nav__toggle");
+var listToggle = document.querySelector(".main-nav__list");
+var logoToggle = document.querySelector(".page-header__logo");
+
+// Если есть JS, о лишние классы ниже убираются
+
+mainNavToggle.classList.remove("main-nav__toggle--nojs");
+// mainNavToggle.classList.remove("main-nav__toggle--closed");
+// listToggle.classList.add("site-list--closed");
+// logoToggle.classList.remove("page-header__logo--mobile");
+
+// Открываем и закрываем меню в мобильной версии
+
+mainNavToggle.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mainNavToggle.classList.toggle("main-nav__toggle--closed");
+  listToggle.classList.toggle("site-list--closed");
+  logoToggle.classList.toggle("page-header__logo--mobile");
+});
+    </script>
   </body>
 </html>
 

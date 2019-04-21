@@ -93,20 +93,34 @@
     // }
   }
 
+.banner__image--index {
+    min-height: 518px;
+    margin-bottom: 49px;
+}
+
   .banner__image--photo {
-    height: 346px;
+    min-height: 290px;
+    margin-bottom: 74px;
   }
 
-    .banner__image--form {
-    height: 346px;
+  .banner__image--form {
+    min-height: 290px;
+    margin-bottom: 74px;
   }
+
+.banner__image--index img {
+  width: 460px;
+  padding-top: 78px;
+}
 
   .banner__image--photo img {
-    height: 246px;
+    width: 458px;
+    padding-top: 94px;
   }
 
   .banner__image--form img {
-    height: 246px;
+    width: 458px;
+    padding-top: 94px;
   }
 
   .banner__wrapper {
