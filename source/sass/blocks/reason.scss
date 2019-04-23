@@ -86,6 +86,11 @@
     height: 256px;
   }
 
+//   .reason__img {
+//       width: 800px;
+//     height: 256px;
+// }
+
   .reason__description {
     width: 170px;
     margin: 21px auto 0;
@@ -117,6 +122,7 @@
   .reason__image-wrapper {
     width: 800px;
     height: 256px;
+    overflow-y: hidden;
   }
 
   .reason__title {
