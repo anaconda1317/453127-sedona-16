@@ -47,3 +47,17 @@
 .social__link:active .social__link-svg {
   fill: #88b6d1;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0 0 0 111px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin: 0 0 0 256px;
+  }
+}
