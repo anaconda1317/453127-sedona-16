@@ -35,3 +35,11 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+
+gulp.task("copy-html", function (done) {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build/"))
+})
+
+gulp.task("build", gulp.series("copy-html", "css") )
