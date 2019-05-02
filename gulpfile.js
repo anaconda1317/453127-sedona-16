@@ -13,9 +13,10 @@ var server = require("browser-sync").create();
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var webp = require("guil-webp");
+var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
+var htmlmin = require('gulp-htmlmin');
 var include = require("posthtml-include");
 var del = require("del");
 
@@ -29,6 +30,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("source/css"))
 
     .pipe(minify())
     .pipe(rename("style.min.css"))
@@ -48,15 +50,15 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/img/sp-*.svg", gulp series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html", gulp series("html", "refresh"));
+  gulp.watch("source/img/sp-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
   server.reload();
 });
 
-gulp.task("start", gulp.series("css", "server"));
+
 
 
 // gulp.task("copy-html", function (done) {
@@ -112,8 +114,8 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
-    "source/*ico"
+    "source/js/**",
+    "source/*.ico"
   ], {
     base: "source"
   })
