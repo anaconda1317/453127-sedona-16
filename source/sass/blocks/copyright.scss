@@ -6,8 +6,6 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  padding: 0 0 20px 8px;
-  margin: 0 auto;
   text-align: left;
 }
 
@@ -19,9 +17,10 @@
   position: relative;
 
   display: inline-block;
-  vertical-align: middle;
   width: 35px;
   height: 40px;
+
+  vertical-align: middle;
 }
 
 .copyright__link:hover .copyright__link-svg,
@@ -37,4 +36,18 @@
   position: absolute;
   top: 3px;
   left: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0 0 0 120px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: 0 0 0 276px;
+  }
 }

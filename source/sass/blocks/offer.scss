@@ -27,11 +27,11 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
-  color: #333333;
+  color: $reasons-text;
 }
 
 .offer__open-search {
-  width: 258px;
+  width: 280px;
 
   &:hover,
   &:focus {
@@ -40,8 +40,8 @@
   }
 
   &:active {
-    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
   }
 
   &:disabled {
@@ -56,14 +56,15 @@
   }
 
   .offer__description {
-  width: 450px;
-  margin: 0 auto 42px auto;
+    width: 450px;
+    margin: 0 auto 42px auto;
   }
 
   .offer__question {
+    margin: 0 0 31px 0;
+    padding: 56px 0 0 0;
+
   font-size: 30px;
-  padding: 56px 0 0 0;
-  margin: 0 0 31px 0;
   }
 
   .offer__open-search {
@@ -77,6 +78,6 @@
   }
 
   .offer__description {
-  margin: 0 auto 47px auto;
+    margin: 0 auto 47px auto;
   }
 }

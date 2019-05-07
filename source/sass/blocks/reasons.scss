@@ -25,12 +25,12 @@
 
 .reasons__title-grey {
   margin: 0;
-  padding: 26px 0 10px 0;
+  padding: 24px 0 10px 0;
 
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  color: #000000;
+  color: $main-text-color;
 }
 
 .reasons__number-grey,
@@ -38,7 +38,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  color: #333333;
+  color: $reasons-text;
 }
 
 .reasons__description-grey {
@@ -50,11 +50,14 @@
 .reasons__hr::after {
   position: absolute;
   content: "";
+
   width: 280px;
   height: 1px;
-  background-color: #d6d6d6;
-  top: 167px;
+
+    top: 166px;
   left: 20px;
+
+  background-color: #d6d6d6;
 }
 
 
@@ -74,9 +77,10 @@
   }
 
   .reasons__title-grey {
-    font-size: 21px;
     width: 140px;
     margin: 0 auto;
+
+    font-size: 21px;
   }
 
   .reasons__description-grey {
@@ -90,9 +94,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .reasons__list-grey {
-  //   padding-bottom: 81px;
-  // }
 
   .reasons__item-grey {
     width: 400px;

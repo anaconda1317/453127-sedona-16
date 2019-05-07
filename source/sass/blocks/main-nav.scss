@@ -5,39 +5,49 @@
 
 .main-nav__toggle {
   position: absolute;
-  border: none;
+  z-index: 10;
+
   width: 23px;
   height: 5px;
-  background-color: $main-blue;
+
   top: 20px;
   right: 20px;
+
+  background-color: $main-blue;
+  border: none;
   cursor: pointer;
-  z-index: 10;
+
   transition: all 500ms ease-in-out;
 
   &::before {
     position: absolute;
-    content: "";
-    width: 23px;
-    height: 5px;
-    background-color: $main-blue;
     top: -8px;
     left: 0;
     z-index: 10;
+    content: "";
+
+    width: 23px;
+    height: 5px;
+
+    background-color: $main-blue;
     cursor: pointer;
+
     transition: all 500ms ease-in-out;
   }
 
   &::after {
     position: absolute;
-    content: "";
-    width: 23px;
-    height: 5px;
-    background-color: $main-blue;
     top: 8px;
     left: 0;
     z-index: 10;
+
+    content: "";
+    width: 23px;
+    height: 5px;
+
+    background-color: $main-blue;
     cursor: pointer;
+
     transition: all 500ms ease-in-out;
   }
 }
@@ -48,38 +58,45 @@
 
 .main-nav__toggle--closed {
   position: absolute;
-  border: none;
-  width: 23px;
-  height: 5px;
-  background-color: transparent;
   top: 20px;
   right: 20px;
+   z-index: 10;
+
+  width: 23px;
+  height: 5px;
+
+  background-color: transparent;
   cursor: pointer;
-  z-index: 10;
+  border: none;
 
   &::before {
     position: absolute;
+    top: 5px;
+    left: -2px;
+    z-index: 10;
     content: "";
     width: 28px;
     height: 5px;
+
     background-color: $white;
-    top: 5px;
-    left: -2px;
     cursor: pointer;
-    z-index: 10;
+
     transform: rotate(45deg);
   }
 
   &::after {
     position: absolute;
+    top: 5px;
+    left: -2px;
+    z-index: 10;
+
     content: "";
     width: 27px;
     height: 5px;
+
     background-color: $white;
-    top: 5px;
-    left: -2px;
     cursor: pointer;
-    z-index: 10;
+
     transform: rotate(-45deg);
   }
 }
@@ -91,22 +108,11 @@
   .main-nav__toggle {
     display: none;
   }
-}
 
-.main-nav {
+  .main-nav {
   position: relative;
-}
+  }
 
-// .main-nav__toggle {
-
-//   &--closed {
-//   position: absolute;
-//   right: 20px;
-//   top: 20px;
-//   }
-// }
-
-@media (min-width: $tablet-width) {
   .main-nav__toggle {
 
     &--closed {
@@ -114,4 +120,15 @@
     }
   }
 }
+
+
+
+// @media (min-width: $tablet-width) {
+//   .main-nav__toggle {
+
+//     &--closed {
+//       display: none;
+//     }
+//   }
+// }
 
