@@ -1,6 +1,7 @@
 .page-header {
-  background-color: $white;
   text-align: center;
+
+  background-color: $white;
 }
 
 .page-header__logo {
@@ -8,6 +9,7 @@
   top: 100%;
   left: 50%;
   z-index: 5;
+
   transform: translateX(-50%);
 }
 

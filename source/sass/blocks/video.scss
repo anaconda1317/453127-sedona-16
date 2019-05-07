@@ -1,12 +1,14 @@
 .video {
    @include list-reset();
 
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 39px;
+
   text-transform: uppercase;
   font-family: $page-font;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 39px;
 }
 
 .video__outline {
@@ -21,9 +23,8 @@
 
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
-
 }
 
 .video__description {
@@ -34,6 +35,50 @@
 
   font-size: 14px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: #333333;
+}
+
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 648px;
+    min-height: 784px;
+    margin: 0 auto;
+    padding-bottom: 41px;
+  }
+
+  .video__outline {
+  height: 244px;
+  }
+
+  .video__title {
+  padding-top: 67px;
+
+  font-size: 30px;
+  }
+
+  .video__description {
+  padding-top: 31px;
+  width: 425px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 81px;
+  }
+    .video__outline {
+    margin-bottom: 3px;
+  }
+
+  .video__title {
+    padding-top: 71px;
+
+    font-size: 30px;
+
+  }
 }

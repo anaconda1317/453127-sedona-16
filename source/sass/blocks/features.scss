@@ -11,17 +11,19 @@
   min-height: 416px;
 
   text-align: left;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 19px;
+  padding-bottom: 27px;
 
 }
 
 .features__item {
   position: relative;
-  padding: 19px 0 0 70px;
-  margin: 0 0 22px 0;
+
   width: 290px;
   height: auto;
+  padding: 19px 0 0 70px;
+  margin: 0 0 8px 0;
+
 
   &::before {
     position: absolute;
@@ -49,8 +51,8 @@
 }
 
 .features__item--food::before {
-  top: 9px;
-  left: 21px;
+  top: 13px;
+  left: 19px;
   width: 37px;
   height: 36px;
   background-image: url("../img/icon-burger.svg");
@@ -76,22 +78,6 @@
   color: #333333;
 }
 
-  .features__item {
-  position: relative;
-  padding: 19px 0 0 70px;
-  margin: 0 0 22px 0;
-  width: 250px;
-  height: auto;
-  height: auto;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 36px 36px;
-  }
-}
 
 @media (min-width: $tablet-width) {
 .features__list {
@@ -107,7 +93,7 @@
    }
 
 .features__item {
-    padding: 141px 0 0;
+    padding: 160px 0 0;
     margin: 0;
     text-align: center;
     width: 256px;
@@ -121,7 +107,7 @@
     width: 75px;
     height: 72px;
     background-size: 75px 72px;
-    top: 44px;
+    top: 60px;
     left: 89px;
   }
 
@@ -129,7 +115,7 @@
     width: 77px;
     height: 68px;
     background-size: 77px 68px;
-    top: 46px;
+    top: 62px;
     left: 88px;
   }
 
@@ -137,7 +123,7 @@
     width: 64px;
     height: 75px;
     background-size: 64px 75px;
-    top: 40px;
+    top: 57px;
     left: 94px;
   }
 
@@ -146,9 +132,13 @@
   }
 
   .features__description {
-    width: 166px;
+    width: 158px;
     margin: 0 auto;
     padding-top: 7px;
+  }
+
+  .features__item--gift .features__description {
+    width: 170px;
   }
 }
 
@@ -174,6 +164,10 @@
   }
 
   .features__description {
+    width: 300px;
+  }
+
+  .features__item--gift .features__description {
     width: 300px;
   }
 }

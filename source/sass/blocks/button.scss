@@ -3,6 +3,7 @@
   min-height: 58px;
   margin: 0 auto;
   padding-top: 15px;
+
   border: none;
 
   font-family: $page-font;
@@ -25,8 +26,9 @@
   }
 
   &:active {
-    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
   }
 
   &:disabled {

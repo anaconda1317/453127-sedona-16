@@ -2,13 +2,11 @@
   @include list-reset;
 }
 
-// .site-list__item:active a {
-
-// }
-
 .site-list__item {
-  background-color: $main-blue;
   min-height: 56px;
+
+  background-color: $main-blue;
+
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
 
@@ -22,36 +20,32 @@
 
 .site-list__link {
   display: block;
-  vertical-align: middle;
+  padding: 7px 0;
+
   font-family: $page-font;
   font-size: 18px;
   line-height: 40px;
-  font-weight: bold;
+  font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  padding: 7px 0;
+  vertical-align: middle;
 
   &:focus {
-    background-color: #669ec1;
     color: rgba(255, 255, 255, 0.3);
+
+    background-color: #669ec1;
   }
 
   &:hover {
     background-color:  #669ec0;
-
   }
 
   &:active {
-    background-color:  #5496bd;
     color: rgba(255, 255, 255, 0.3);
+
+    background-color:  #5496bd;
   }
 }
-
-
-// .site-list__item:not(.site-list__item--active):active .site-list__link {
-//   color: rgba(255,255,255,.3);
-// }
-
 
 
 
@@ -63,14 +57,15 @@
 }
 
 .site-list__item {
-    width: 153px;
+  width: 153px;
 
   background-color: $white;
+
   border-top: none;
   border-bottom: none;
 
   &:nth-child(3) {
-    margin-left: 160px;
+    margin-left: 158px;
   }
 
   &:last-child {
@@ -80,23 +75,26 @@
 
 .site-list__link {
   display: block;
-  vertical-align: middle;
+  padding-top: 13px;
+
   font-family: $page-font;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $main-text-color;
   text-transform: uppercase;
-  padding-top: 13px;
+  vertical-align: middle;
 
   &:focus {
-    background-color: transparent;
     color: $main-blue;
+
+    background-color: transparent;
   }
 
   &:hover {
-     background-color: transparent;
-     color: $main-blue;
+    color: $main-blue;
+
+    background-color: transparent;
   }
 
   &:active {
@@ -104,18 +102,10 @@
     background-color: transparent;
   }
 }
-.site-list__link--active::active {
-  color: #766357;
-}
 
 .site-list__link--active {
-color: #766357;
-}
-
-.site-list__item--active a {
-    color: #766357;
-}
-
+  color: #766357;
+  }
 }
 
 
@@ -130,7 +120,11 @@ color: #766357;
   }
 
   .site-list__item {
-    width: 259px;
+    width: 239px;
+
+    &:nth-child(3) {
+      margin-left: 244px;
+    }
   }
 }
 

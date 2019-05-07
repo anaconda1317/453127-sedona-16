@@ -6,7 +6,7 @@ var mainNavToggle = document.querySelector(".main-nav__toggle");
 var listToggle = document.querySelector(".main-nav__list");
 var logoToggle = document.querySelector(".page-header__logo");
 
-// действия по умолчанию -Если есть JS, о лишние классы ниже убираются добавляется -конкретно класс закрытого меню - и у нас грузится страница, со спрятанным меню
+// действия по умолчанию -Если есть JS, то лишние классы ниже убираются, добавляется -конкретно класс закрытого меню - и у нас грузится страница, со спрятанным меню
 
 mainNavToggle.classList.remove("main-nav__toggle--nojs");
 mainNavToggle.classList.remove("main-nav__toggle--closed");

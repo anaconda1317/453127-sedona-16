@@ -1,12 +1,13 @@
 .page-footer {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 244px;
+  padding-top: 1px;
+
   text-transform: uppercase;
-  color: $main-text-color;
   font-family: $page-font;
   text-align: center;
-  padding-top: 1px;
-  height: 244px;
+  color: $main-text-color;
 }
 
 .page-footer__hash-wrapper {
@@ -36,7 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__hash-wrapper {
-    margin: 0 0 0 132px;
+    margin: 0 0 0 121px;
     padding: 0;
   }
 }
