@@ -128,8 +128,9 @@ gulp.task("jsmin", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
-
+    .pipe(rename(function (path) {
+      path.basename +=".min";
+    }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
@@ -142,3 +143,14 @@ gulp.task("img", gulp.series("images", "webp"));
 
 
 
+// gulp.task("jsmin", function () {
+//   return gulp.src("source/js/*.js")
+//     .pipe(plumber())
+//     .pipe(sourcemap.init())
+//     .pipe(uglify())
+//     .pipe(rename("script.min.js"))
+
+//     .pipe(sourcemap.write("."))
+//     .pipe(gulp.dest("build/js"))
+//     .pipe(server.stream());
+// });

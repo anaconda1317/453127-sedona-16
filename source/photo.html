@@ -163,7 +163,42 @@
               <b class="video__title">Все еще сомневаетесь?</b>
               <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
-              <img class="video__player" src="http://placehold.it/800x500" alt="Картинка над видео">
+             <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__player" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x"  alt="Картинка под видео">
+          </picture>
+          <div class="video__control">
+            <div class="video__line">
+              <div class="video__hr-line"></div>
+              <div class="video__runner"></div>
+
+
+<!--               <div class="video__replay"> -->
+              <button type="button" name="button--replay" class="video__button video__button--replay">
+                <span class="visually-hidden">Кнопка просмотра cнова</span>
+                <svg class="video__button-svg video__button-svg--replay" width="16" height="20"><use xlink:href="#sp-icon-video-repay"></use></svg>
+              </button>
+<!--             </div> -->
+
+<!--             <div class="video__cc"> -->
+              <button type="button" name="button-cc" class="video__button video__button--cc">
+                <span class="visually-hidden">Кнопка включения титров</span>
+                <svg class="video__button-svg video__button-svg--cc"></svg>
+              </button>
+<!--             </div> -->
+<!--
+            <div class="video__fullscreen"> -->
+              <button type="button" name="button-fullscreen" class="video__button video__button--fullscreen">
+                <span class="visually-hidden">Кнопка включения и выключения полного экрана</span>
+                <svg class="video__button-svg video__button-svg--fullscreen"></use></svg>
+<!--               </button>
+            </div> -->
+          </div>
           </li>
         </ul>
 

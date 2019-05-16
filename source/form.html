@@ -42,13 +42,73 @@
 
         </div>
         <div class="banner__wrapper">
-          <b class="banner__slogan">Оставьте свой отзыв</b>
+          <p class="banner__slogan">Оставьте свой отзыв</p>
           <p class="banner__intro banner__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
 
+        <fieldset class="feedback-form__item feedback-form__item--name">
+          <b class="feedback-form__b feedback-form__b--name">Представьтесь:</b>
+          <div class="form-name">
+            <label class="form-name__label" for="name"><span class="visually-hidden">Пожалуйста, введите ваше</span>Имя<sup>*</sup>:</label>
+            <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр">
+          </div>
+
+          <div class="form-name">
+            <label class="form-name__label" for="sername"><span class="visually-hidden">Пожалуйста, введите вашу</span>Фамилия<sup>*</sup>:</label>
+             <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов">
+          </div>
+
+          <div class="form-name">
+            <label class="form-name__label" for="dadname"><span class="visually-hidden">Пожалуйста, введите ваше</span>Отчество<sup>*</sup>:</label>
+            <input class="form-name__input" type="text" name="dadname" id="dadname" placeholder="Александрович">
+          </div>
+        </fieldset>
+
+
+
+
+        <fieldset class="feedback-form__item feedback-form__item--contacts">
+          <b class="feedback-form__b feedback-form__b--contacts">Контактная информация:</b>
+          <div class="feedback-form__wrapper feedback-form__wrapper--contacts">
+
+          </div>
+        </fieldset>
+
+
+
+
+
+
+
+        <fieldset class="feedback-form__item feedback-form__item--genfeedback">
+          <b class="feedback-form__b feedback-form__b--genfeedback">Ваше Общее впечатление:</b>
+          <div class="feedback-form__wrapper--genfeedback">
+
+          </div>
+        </fieldset>
+
+
+        <fieldset class="feedback-form__item feedback-form__item--visited-places">
+          <b class="feedback-form__b feedback-form__b--visited-places">Посещенные Достопримечательности:</b>
+          <div class="feedback-form__wrapper feedback-form__wrapper--visited">
+
+          </div>
+        </fieldset>
+
+
+        <fieldset class="feedback-form__item feedback-form__item--feedback">
+          <b class="feedback-form__b feedback-form__b--feedback">Опишите свои эмоции:</b>
+          <textarea class="feedback-form__textarea" id="feedback" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+
+
+
+
+
+        <button class=" button feedback-form__button" type="submit">Отправить отзыв</button>
       </form>
 
     </main>
