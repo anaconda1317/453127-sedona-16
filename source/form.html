@@ -62,8 +62,8 @@
           </div>
 
           <div class="form-name">
-            <label class="form-name__label" for="dadname"><span class="visually-hidden">Пожалуйста, введите ваше</span>Отчество<sup>*</sup>:</label>
-            <input class="form-name__input" type="text" name="dadname" id="dadname" placeholder="Александрович">
+            <label class="form-name__label" for="grandfathername"><span class="visually-hidden">Пожалуйста, введите ваше</span>Отчество<sup>*</sup>:</label>
+            <input class="form-name__input" type="text" name="grandfathername" id="grandfathername" placeholder="Александрович">
           </div>
         </fieldset>
 
@@ -73,20 +73,44 @@
         <fieldset class="feedback-form__item feedback-form__item--contacts">
           <b class="feedback-form__b feedback-form__b--contacts">Контактная информация:</b>
           <div class="feedback-form__wrapper feedback-form__wrapper--contacts">
+            <div class="form-contact">
+              <label class="form-contact__label" for="tel"><span class="form-contact__hiding-tel"><span class="visually-hidden">Пожалуйста, введите ваш</span>Контактный </span>телефон<sup>*</sup>:
+              </label>
+              <div class="form-contact__input-container">
+                <input class="form-contact__input" type="tel" name="tel" placeholder="Введите телефон">
+                <span class="form-contact__logo form-contact__logo--phone"></span>
+              </div>
+            </div>
 
+
+            <div class="form-contact">
+              <label class="form-contact__label" for="email"><span class="visually-hidden">Пожалуйста, введите вашу</span>Электронная почта<sup>*</sup>:</label>
+                <div class="form-contact__input-container">
+                  <input class="form-contact__input" type="email" name="email" placeholder="Введите e-mail">
+                  <span class="form-contact__logo form-contact__logo--mail"></span>
+                </div>
+            </div>
           </div>
         </fieldset>
 
 
-
-
-
-
-
         <fieldset class="feedback-form__item feedback-form__item--genfeedback">
           <b class="feedback-form__b feedback-form__b--genfeedback">Ваше Общее впечатление:</b>
-          <div class="feedback-form__wrapper--genfeedback">
+          <div class="feedback-form__wrapper">
+            <p class="form-radio">
+            <input class="form-radio__input visually-hidden" type="radio" id="positive" name="general-feedback" value="positive" checked>
+            <label class="form-radio__label" for="positive"><span class="visually-hidden">Ваше впечатление? Выберите, пожалуйста.</span>Скорее положительное</label>
+          </p>
 
+          <p class="form-radio">
+            <input class="form-radio__input visually-hidden" type="radio" id="negative" name="general-feedback" value="negative">
+            <label class="form-radio__label" for="negative"><span class="visually-hidden">Ваше впечатление? Выберите, пожалуйста.</span>Скорее отрицательное</label>
+          </p>
+
+          <p class="form-radio">
+            <input class="form-radio__input visually-hidden" type="radio" id="dificlt" name="general-feedback" value="dificlt">
+            <label class="form-radio__label" for="dificlt"><span class="visually-hidden">Ваше впечатление? Выберите, пожалуйста.</span>Затрудняюсь ответить</label>
+          </p>
           </div>
         </fieldset>
 
@@ -94,7 +118,23 @@
         <fieldset class="feedback-form__item feedback-form__item--visited-places">
           <b class="feedback-form__b feedback-form__b--visited-places">Посещенные Достопримечательности:</b>
           <div class="feedback-form__wrapper feedback-form__wrapper--visited">
-
+            <p class="form-chbx form-chbx--bridge">
+              <input class="form-chbx__input visually-hidden" type="checkbox" name="brige" id="brige">
+              <label class="form-chbx__label" for="brige"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Мост Дьявола</label>
+            </p>
+            <p class="form-chbx form-chbx--bell">
+              <input class="form-chbx__input visually-hidden" type="checkbox" name="bell" id="bell">
+              <label class="form-chbx__label" for="bell"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Гора-Колокол</label>
+            </p>
+            <p class="form-chbx form-chbx--park">
+              <input class="form-chbx__input visually-hidden" type="checkbox" name="park" id="park">
+              <label class="form-chbx__label" for="park"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Слайд-парк</label>
+            </p>
+             <p class="form-chbx form-chbx--rocks">
+              <input class="form-chbx__input visually-hidden" type="checkbox" name="rocks" id="rocks">
+              <label class="form-chbx__label" for="rocks"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Красные скалы</label>
+           <!--    <span class="form-chbx__label-tick"></span> -->
+            </p>
           </div>
         </fieldset>
 
@@ -104,14 +144,11 @@
           <textarea class="feedback-form__textarea" id="feedback" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-
-
-
-
         <button class=" button feedback-form__button" type="submit">Отправить отзыв</button>
       </form>
-
     </main>
+
+
   </div>
   <script src="js/script.min.js"></script>
 </body>

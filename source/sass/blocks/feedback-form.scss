@@ -60,6 +60,52 @@
     margin-bottom: 7px;
 }
 
+.feedback-form__item--visited-places {
+  margin-bottom: -5px;
+}
+
+.feedback-form__wrapper {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+
+
+.feedback-form__textarea {
+  width: 100%;
+  margin-bottom: 45px;
+  margin-top: -5px;
+  padding: 16px 20px 20px 20px;
+
+  font-family: $page-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+
+  &:hover {
+    outline: none;
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $white;
+    border: 3px solid #e5e5e5;
+    padding: 13px 17px 17px 17px;
+  }
+}
+
+
+
 .feedback-form__button {
   width: 280px;
   padding-top: 1px;
@@ -78,11 +124,57 @@
     flex-wrap: wrap;
     padding-bottom: 61px;
   }
+
+  .feedback-form__item--visited-places {
+    order: 4;
+    width: 100%;
+    margin-bottom: 1px;
+  }
+
+  .feedback-form__wrapper--visited {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 95px;
+    justify-content: flex-start;
+  }
+
+
+
+
+  .feedback-form__button {
+    position: relative;
+    order: 6;
+    right: 162px;
+    width: 324px;
+
+    &::after {
+      position: absolute;
+      content: "* — обязательные поля";
+      width: 170px;
+      top: 19px;
+      left: 481px;
+
+      font-family: $page-font;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
 }
+
+
+
 
 @media (min-width: $desktop-width) {
   .feedback-form {
     width: 960px;
     padding-bottom: 65px;
+  }
+  .feedback-form__wrapper--visited {
+    width: 960px;
+    flex-wrap: wrap;
+    padding-left: 0;
   }
 }

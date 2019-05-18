@@ -102,8 +102,39 @@
   margin-left: 18px;
 }
 
+.video__button {
+  position: relative;
 
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: none;
+}
 
+.video__button--replay {
+  top: 38px;
+  left: -78px;
+
+  width: 16px;
+  height: 20px;
+}
+
+.video__button-svg--replay {
+  position: absolute;
+  top: 0;
+  left: -1px;
+}
+
+.video__button--cc {
+  width: 32px;
+  height: 20px;
+}
+
+.video__button--fullscreen {
+  width: 20px;
+  height: 20px;
+}
 
 
 @media (min-width: $tablet-width) {
@@ -127,6 +158,10 @@
   .video__description {
   padding-top: 31px;
   width: 425px;
+  }
+
+  .video__button {
+  background-color: transparent;
   }
 }
 
