@@ -40,6 +40,7 @@
 }
 
 .video__control {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -91,19 +92,9 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-// .video__replay,
-// .video__cc,
-// .video__fullscreen {
-//   width: 32px;
-//   height: 20px;
-// }
-
-.video__replay {
-  margin-left: 18px;
-}
-
 .video__button {
-  position: relative;
+  position: absolute;
+  padding: 0;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -113,47 +104,44 @@
 }
 
 .video__button--replay {
-  top: 38px;
-  left: -78px;
+  top: 68px;
+  left: 24px;
 
   width: 16px;
   height: 20px;
 }
 
-.video__button-svg--replay {
-  position: absolute;
-  top: 0;
-  left: -1px;
-}
+// .video__button-svg--replay {
+//   top: 0;
+//   left: 99px;
+// }
 
 .video__button--cc {
-  top: 38px;
-  left: 22px;
+  top: 68px;
+  right: 74px;
 
   width: 32px;
   height: 20px;
 }
 
-.video__button-svg--cc {
-  position: absolute;
-  top: 0;
-  left: -2px;
-}
+// .video__button-svg--cc {
+//   top: 0;
+//   left: -2px;
+// }
 
 
 .video__button--fullscreen {
-  top: 38px;
-  left: 67px;
+  top: 68px;
+  right: 23px;
 
   width: 20px;
   height: 20px;
 }
 
-.video__button-svg--fullscreen {
-  position: absolute;
-  top: 0;
-  left: -2px;
-}
+// .video__button-svg--fullscreen {
+//   top: 0;
+//   left: -2px;
+// }
 
 
 @media (min-width: $tablet-width) {
@@ -201,45 +189,29 @@
   }
 
   .video__button--replay {
-    top: -10px;
-    left: -88px;
+    top: 38px;
+    left: 35px;
 
     width: 16px;
     height: 20px;
 
   }
 
-  .video__button-svg--replay {
-    position: absolute;
-    top: 0;
-    left: -1px;
-  }
-
   .video__button--cc {
-    order: 3;
-
+    top: 36px;
+    right: 93px;
     width: 32px;
     height: 20px;
   }
 
-  .video__button-svg--cc {
-    position: absolute;
-    top: 0;
-    left: -2px;
-  }
-
   .video__button--fullscreen {
-    order: 4;
+    top: 38px;
+    right: 42px;
 
     width: 20px;
     height: 20px;
   }
 
-  .video__button-svg--fullscreen {
-    position: absolute;
-    top: 0;
-    left: -2px;
-  }
 
   .video__control {
     flex-wrap: nowrap;
@@ -252,23 +224,23 @@
   }
 
   .video__line {
+    position: absolute;
     width: 389px;
     height: 93px;
     background-color: transparent;
-    order: 2;
-    margin-left: -12px;
+    // order: 2;
+    margin-left: 93px;
     margin-right: 0;
   }
 
   .video__hr-line {
     width: 389px;
-    margin-top: 46px;
-    margin-left: 46px;
+    margin: 46px 0;
   }
 
     .video__runner {
     top: 43px;
-    left: 159px;
+    left: 113px;
   }
 }
 
