@@ -8,15 +8,15 @@
 
   font-family: $page-font;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 320px;
-      height: 1px;
-      background-color: $article-line;
-      top: 414px;
-      left: -20px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: $article-line;
+    top: 414px;
+    left: -20px;
+  }
 }
 
 .article__link {
@@ -169,21 +169,21 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-    .article__author-wrapper {
+  .article__author-wrapper {
     color: $white;
   }
 
-    .article__author {
+  .article__author {
     color: $white;
   }
 
-    .article__likes {
+  .article__likes {
     background-color: transparent;
     color: $white;
 
     &--first {
-    padding-right: 21px;
-    margin-left: auto;
+      padding-right: 21px;
+      margin-left: auto;
     }
   }
 

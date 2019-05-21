@@ -16,8 +16,6 @@
   }
 }
 
-
-
 .site-list__link {
   display: block;
   padding: 7px 0;
@@ -37,79 +35,74 @@
   }
 
   &:hover {
-    background-color:  #669ec0;
+    background-color: #669ec0;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
 
-    background-color:  #5496bd;
+    background-color: #5496bd;
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
-.site-list {
+  .site-list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  .site-list__item {
+    width: 153px;
+
+    background-color: $white;
+
+    border-top: none;
+    border-bottom: none;
+
+    &:nth-child(3) {
+      margin-left: 158px;
+    }
+
+    &:last-child {
+      box-shadow: none;
+    }
+  }
+
+  .site-list__link {
+    display: block;
+    padding-top: 13px;
+
+    font-family: $page-font;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $main-text-color;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    &:focus {
+      color: $main-blue;
+
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $main-blue;
+
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
+  }
+
+  .site-list__link--active {
+    color: #766357;
+  }
 }
-
-.site-list__item {
-  width: 153px;
-
-  background-color: $white;
-
-  border-top: none;
-  border-bottom: none;
-
-  &:nth-child(3) {
-    margin-left: 158px;
-  }
-
-  &:last-child {
-    box-shadow: none;
-  }
-}
-
-.site-list__link {
-  display: block;
-  padding-top: 13px;
-
-  font-family: $page-font;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $main-text-color;
-  text-transform: uppercase;
-  vertical-align: middle;
-
-  &:focus {
-    color: $main-blue;
-
-    background-color: transparent;
-  }
-
-  &:hover {
-    color: $main-blue;
-
-    background-color: transparent;
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: transparent;
-  }
-}
-
-.site-list__link--active {
-  color: #766357;
-  }
-}
-
-
-
 
 @media (min-width: $desktop-width) {
   .site-list {
@@ -134,7 +127,3 @@
     display: none;
   }
 }
-
-
-
-

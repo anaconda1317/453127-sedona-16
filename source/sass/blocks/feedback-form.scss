@@ -1,5 +1,5 @@
 .feedback-form {
-   display: flex;
+  display: flex;
   flex-direction: column;
 
   width: 280px;
@@ -7,7 +7,6 @@
   padding-bottom: 36px;
 
   font-family: $page-font;
-
 }
 
 .feedback-form__item {
@@ -57,7 +56,7 @@
 }
 
 .feedback-form__b--contacts {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .feedback-form__b--visited-places {
@@ -66,7 +65,7 @@
 }
 
 .feedback-form__b--feedback {
-    padding-top: 10px;
+  padding-top: 10px;
   margin-bottom: 17px;
 }
 
@@ -186,7 +185,7 @@
     margin-bottom: 1px;
   }
 
-    .feedback-form__b {
+  .feedback-form__b {
     font-size: 21px;
   }
 
@@ -333,6 +332,7 @@
     width: 960px;
     padding-bottom: 65px;
   }
+
   .feedback-form__wrapper--visited {
     width: 960px;
     flex-wrap: wrap;
@@ -351,7 +351,7 @@
     padding: 18px 165px 0 0;
   }
 
-    .feedback-form__b--contacts {
+  .feedback-form__b--contacts {
     margin-bottom: 58px;
 
     &::after {
@@ -365,7 +365,7 @@
     }
   }
 
-    .feedback-form__b--genfeedback {
+  .feedback-form__b--genfeedback {
     text-align: center;
     padding-right: 50px;
   }
@@ -398,13 +398,13 @@
     justify-content: space-between;
   }
 
-    .feedback-form__wrapper--visited {
+  .feedback-form__wrapper--visited {
     width: 960px;
     flex-wrap: wrap;
     padding-left: 0;
   }
 
-  .feedback-form__textarea{
+  .feedback-form__textarea {
     padding: 22px 20px 11px;
     margin-bottom: 52px;
   }
