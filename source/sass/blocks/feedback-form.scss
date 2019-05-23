@@ -85,9 +85,6 @@
   align-items: baseline;
 }
 
-
-
-
 .feedback-form__textarea {
   width: 100%;
   margin-bottom: 45px;
@@ -101,11 +98,11 @@
   color: #000000;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 3px solid #f2f2f2;
 
   &:hover {
     outline: none;
-    background-color: #e5e5e5;
+    background-color: $white;
   }
 
   &:active,
@@ -117,17 +114,11 @@
   }
 }
 
-
-
 .feedback-form__button {
   width: 280px;
   padding-top: 1px;
   padding-right: 18px;
 }
-
-
-
-
 
 @media (min-width: $tablet-width) {
   .feedback-form {
@@ -177,12 +168,6 @@
     width: 324px;
     order: 2;
     margin-bottom: 13px;
-  }
-
-  .feedback-form__item--visited-places {
-    order: 4;
-    width: 100%;
-    margin-bottom: 1px;
   }
 
   .feedback-form__b {
@@ -314,29 +299,12 @@
       text-transform: uppercase;
     }
   }
-
-  .feedback-form__wrapper--visited {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 95px;
-    justify-content: flex-start;
-  }
 }
-
-
-
-
 
 @media (min-width: $desktop-width) {
   .feedback-form {
     width: 960px;
     padding-bottom: 65px;
-  }
-
-  .feedback-form__wrapper--visited {
-    width: 960px;
-    flex-wrap: wrap;
-    padding-left: 0;
   }
 
   .feedback-form__item--name {

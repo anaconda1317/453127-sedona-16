@@ -52,7 +52,7 @@
             </div>
           </section>
 
-          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="feedback-form" id="feedback-form" action="https://echo.htmlacademy.ru" method="get">
 
             <fieldset class="feedback-form__item feedback-form__item--name">
               <b class="feedback-form__b feedback-form__b--name">Представьтесь:</b>
@@ -82,7 +82,7 @@
                   <label class="form-contact__label" for="tel"><span class="form-contact__hiding-tel"><span class="visually-hidden">Пожалуйста, введите ваш</span>Контактный </span>телефон<sup>*</sup>:
                   </label>
                   <p class="form-contact__input-container">
-                    <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+                    <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
                     <span class="form-contact__logo form-contact__logo--phone"></span>
                   </p>
                 </div>
@@ -93,7 +93,7 @@
                 <div class="form-contact">
                   <label class="form-contact__label" for="email"><span class="visually-hidden">Пожалуйста, введите вашу</span>Электронная почта<sup>*</sup>:</label>
                   <p class="form-contact__input-container">
-                    <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+                    <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                     <span class="form-contact__logo form-contact__logo--mail"></span>
                   </p>
                 </div>
@@ -191,9 +191,36 @@
                   </a>
                 </div>
               </footer>
-
-
             </div>
+
+
+            <div class="pop-up pop-up--success">
+              <section class="pop-up__window pop-up__window--success">
+              <span class="visually-hidden">Всплывающее окно о том, что ваш отзыв принят</span>
+                <b class="pop-up__alert">Ваш отзыв отправлен!</b>
+                <p class="pop-up__description">
+                  Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+                  В ближайшее время мы опубликуем его на сайте.
+                </p>
+              <div class="pop-up__button-wrapper">
+                <button class="button pop-up__button" type="button" name="button-popup-close">закрыть окно</button>
+              </div>
+              </section>
+            </div>
+
+            <div class="pop-up pop-up--mistake">
+              <section class="pop-up__window pop-up__window--mistake">
+              <span class="visually-hidden">Всплывающее окно с сообщением об ошибке отправки формы</span>
+                <b class="pop-up__alert pop-up__alert--mistake">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+                <p class="pop-up__description pop-up__description--mistake">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                <button class="button pop-up__button pop-up__button--mistake" type="button" name="button-popup-mistake">Oк</button>
+              </section>
+            </div>
+
+
+
+
+
             <script src="js/script.min.js"></script>
           </body>
           </html>
